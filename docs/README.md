@@ -14,4 +14,4 @@ has a run target, that starts QEMU with the image, you need to have a QEMU
 install to have it work.
 
 ## License
-[BSD-2-Clause](./LICENSE).
+[BSD-2-Clause](./licenses/LICENSE-bsd-2-clause.txt)
