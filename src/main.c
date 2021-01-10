@@ -52,5 +52,7 @@ void _start(struct stivale2_struct *info) {
     vga_buffer[2] = VGA_COLOR('l', VGA_GREEN);
     vga_buffer[3] = VGA_COLOR('l', VGA_GREEN);
     vga_buffer[4] = VGA_COLOR('o', VGA_GREEN);
+	vga_buffer[5] = VGA_COLOR('!', VGA_WHITE);
+	vga_buffer[6] = VGA_COLOR('w', VGA_WHITE);
     asm volatile ("hlt");
 }

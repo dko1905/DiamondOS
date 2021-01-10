@@ -13,7 +13,7 @@ boot:
 	$(MAKE) -C boot CONFIG_MK=$(CONFIG_MK) INC="$(INC)" all
 
 diamond.elf: $(OBJECTS)
-	$(LD) $(MYLDFLAGS) boot/*.o -o diamond.elf
+	$(LD) $(MYLDFLAGS) $(OBJECTS) -o diamond.elf
 
 clean:
 	$(MAKE) -C boot CONFIG_MK=$(CONFIG_MK) INC="$(INC)" clean
