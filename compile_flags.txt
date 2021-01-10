@@ -1,4 +1,4 @@
--std=c99
+-std=gnu99
 -nostdlib
 -nolibc
 -I./include/

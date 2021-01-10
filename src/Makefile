@@ -9,7 +9,7 @@ all: program
 .c.o:
 	$(CC) $(MYCFLAGS) -I $(INC) -c $<
 
-hello:
+kern:
 	$(MAKE) -C hello CONFIG_MK=$(CONFIG_MK) INC=$(INC) all
 
 program: $(OBJECTS) hello
