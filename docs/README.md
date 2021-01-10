@@ -14,4 +14,4 @@ has a run target, that starts QEMU with the image, you need to have a QEMU
 install to have it work.
 
 ## License
-Free as in Freedom, [GPL-2.0-only](./LICENSE).
+[BSD-2-Clause](./LICENSE).
