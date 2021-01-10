@@ -7,7 +7,7 @@ OBJECTS = main.o
 all: $(OBJECTS)
 
 .c.o:
-	$(CC) $(MYCFLAGS) -I $(INC) -c $<
+	$(CC) $(MYCFLAGS) $(INC) -c $<
 
 clean:
 	rm -f $(OBJECTS)

@@ -12,7 +12,11 @@ INCS = #`$(PKG_CONFIG) --cflags zlib`
 LIBS = #`$(PKG_CONFIG) --libs zlib`
 
 # Flags
-MYCPPFLAGS = -DVERSION=\"$(VERSION)\" # My Preprocessor
-MYCFLAGS = -std=c99 -Wall -Wextra -pedantic \
-           $(INCS) $(MYCPPFLAGS) $(CPPFLAGS) $(CFLAGS) # My C-flags
-MYLDFLAGS = $(LIBS) $(LDFLAGS) # My LD flags
+MYCPPFLAGS = -DVERSION=\"$(VERSION)\"
+MYCFLAGS = -std=gnu99 -Wall -Wextra -pedantic \
+           $(INCS) $(MYCPPFLAGS) $(CPPFLAGS) $(CFLAGS) \
+           -ffreestanding -fno-stack-protector -fno-pic -mno-80387 \
+           -mno-mmx -mno-3dnow -mno-sse -mno-sse2 -mcmodel=kernel \
+           -mno-red-zone
+MYLDFLAGS = $(LIBS) \
+            -Tlinker.ld -static -nostdlib -no-pie

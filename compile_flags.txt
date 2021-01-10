@@ -2,3 +2,4 @@
 -nostdlib
 -nolibc
 -I./include/
+-I./limine/stivale/

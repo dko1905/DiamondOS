@@ -4,19 +4,19 @@ include $(CONFIG_MK)
 
 OBJECTS = main.o
 
-all: program
+all: diamond.elf
 
 .c.o:
-	$(CC) $(MYCFLAGS) -I $(INC) -c $<
+	$(CC) $(MYCFLAGS) $(INC) -c $<
 
 boot:
-	$(MAKE) -C boot CONFIG_MK=$(CONFIG_MK) INC=$(INC) all
+	$(MAKE) -C boot CONFIG_MK=$(CONFIG_MK) INC="$(INC)" all
 
-program: $(OBJECTS) boot
-	$(CC) $(OBJECTS) boot/*.o -o program $(MYLDFLAGS)
+diamond.elf: $(OBJECTS)
+	$(LD) $(MYLDFLAGS) boot/*.o -o diamond.elf
 
 clean:
-	$(MAKE) -C boot CONFIG_MK=$(CONFIG_MK) INC=$(INC) clean
-	rm -f program $(OBJECTS)
+	$(MAKE) -C boot CONFIG_MK=$(CONFIG_MK) INC="$(INC)" clean
+	rm -f diamond.elf $(OBJECTS)
 
 .PHONY: all clean boot
