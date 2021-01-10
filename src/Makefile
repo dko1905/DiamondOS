@@ -9,14 +9,14 @@ all: program
 .c.o:
 	$(CC) $(MYCFLAGS) -I $(INC) -c $<
 
-kern:
-	$(MAKE) -C hello CONFIG_MK=$(CONFIG_MK) INC=$(INC) all
+boot:
+	$(MAKE) -C boot CONFIG_MK=$(CONFIG_MK) INC=$(INC) all
 
-program: $(OBJECTS) hello
-	$(CC) $(OBJECTS) hello/*.o -o program $(MYLDFLAGS)
+program: $(OBJECTS) boot
+	$(CC) $(OBJECTS) boot/*.o -o program $(MYLDFLAGS)
 
 clean:
-	$(MAKE) -C hello CONFIG_MK=$(CONFIG_MK) INC=$(INC) clean
+	$(MAKE) -C boot CONFIG_MK=$(CONFIG_MK) INC=$(INC) clean
 	rm -f program $(OBJECTS)
 
-.PHONY: all clean hello
+.PHONY: all clean boot

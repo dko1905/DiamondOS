@@ -2,7 +2,7 @@
 
 include $(CONFIG_MK)
 
-OBJECTS = hello.o
+OBJECTS = main.o
 
 all: $(OBJECTS)
 
