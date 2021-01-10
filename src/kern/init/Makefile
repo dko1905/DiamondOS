@@ -2,7 +2,7 @@
 
 include $(CONFIG_MK)
 
-OBJECTS = main.o
+OBJECTS = init.o
 
 all: $(OBJECTS)
 
@@ -12,4 +12,4 @@ all: $(OBJECTS)
 clean:
 	rm -f $(OBJECTS)
 
-.PHONY: all clean
+.PHONY: all clean init
