@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg378"
+   version="1.1"
+   viewBox="0 0 123.55886 30.82877"
+   height="116.51965"
+   width="467"
+   sodipodi:docname="wide_logo.svg"
+   inkscape:version="1.0.1 (unknown)"
+   inkscape:export-filename="/home/daniel/Pictures/DiamondOS/wide_logo.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs372">
+    <rect
+       x="19.061407"
+       y="2.6592121"
+       width="9.7217484"
+       height="12.686621"
+       id="rect1542" />
+    <rect
+       x="19.918779"
+       y="2.567302"
+       width="8.4606237"
+       height="12.778531"
+       id="rect1536" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="228.59656"
+     inkscape:cy="75.812315"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:pagecheckerboard="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1652"
+     inkscape:window-height="993"
+     inkscape:window-x="12"
+     inkscape:window-y="41"
+     inkscape:window-maximized="0"
+     inkscape:snap-text-baseline="false"
+     inkscape:snap-center="true">
+    <sodipodi:guide
+       position="0,15.483325"
+       orientation="0,1"
+       id="guide380"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="19.752204,15.483329"
+       orientation="-1,0"
+       id="guide1552"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata375">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#1f4be8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.251832;stroke-opacity:1"
+       id="rect384"
+       width="15.380626"
+       height="15.380631"
+       x="11.538558"
+       y="-8.4103642"
+       transform="matrix(0.55908696,0.82910902,-0.55908696,0.82910902,0,0)" />
+    <text
+       xml:space="preserve"
+       id="text1534"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1536);fill:#000000;fill-opacity:1;stroke:none;" />
+    <text
+       xml:space="preserve"
+       id="text1540"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:25.5058px;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1542);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.00013;stroke-miterlimit:4;stroke-dasharray:none;" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.0039px;line-height:17.0034px;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none"
+       x="21.284203"
+       y="21.455647"
+       id="text1548"
+       inkscape:transform-center-x="0.11585614"
+       inkscape:transform-center-y="-0.26664838"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.0039px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#437ff9;fill-opacity:1;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none"
+         sodipodi:role="line"
+         id="tspan1550"
+         x="21.284203"
+         y="21.455647">Diamond OS</tspan></text>
+  </g>
+</svg>
