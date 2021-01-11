@@ -17,6 +17,6 @@ MYCFLAGS = -std=gnu99 -Wall -Wextra -pedantic \
            $(INCS) $(MYCPPFLAGS) $(CPPFLAGS) $(CFLAGS) \
            -ffreestanding -fno-stack-protector -fno-pic -mno-80387 \
            -mno-mmx -mno-3dnow -mno-sse -mno-sse2 -mcmodel=kernel \
-           -mno-red-zone -nostdinc -Wno-macro-redefined
+           -mno-red-zone -nostdinc -Wno-language-extension-token
 MYLDFLAGS = $(LIBS) \
             -Tlinker.ld -static -nostdlib -no-pie

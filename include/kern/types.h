@@ -118,6 +118,12 @@ typedef __INT32_TYPE__ int32_t;
 typedef __UINT32_TYPE__ uint32_t;
 # endif /* __uint32_t_defined */
 
+# undef __int_least32_t
+# undef __uint_least32_t
+# undef __int_least16_t
+# undef __uint_least16_t
+# undef __int_least8_t
+# undef __uint_least8_t
 # define __int_least32_t int32_t
 # define __uint_least32_t uint32_t
 # define __int_least16_t int32_t
@@ -151,6 +157,11 @@ typedef uint24_t uint_fast24_t;
 typedef __INT16_TYPE__ int16_t;
 #endif /* __int8_t_defined */
 typedef __UINT16_TYPE__ uint16_t;
+
+# undef __int_least16_t
+# undef __uint_least16_t
+# undef __int_least8_t
+# undef __uint_least8_t
 # define __int_least16_t int16_t
 # define __uint_least16_t uint16_t
 # define __int_least8_t int16_t
@@ -170,6 +181,8 @@ typedef __uint_least16_t uint_fast16_t;
 typedef __INT8_TYPE__ int8_t;
 #endif /* __int8_t_defined */
 typedef __UINT8_TYPE__ uint8_t;
+# undef __int_least8_t
+# undef __uint_least8_t
 # define __int_least8_t int8_t
 # define __uint_least8_t uint8_t
 #endif /* __INT8_TYPE__ */
@@ -308,6 +321,9 @@ typedef __UINTMAX_TYPE__ uintmax_t;
 
 #ifdef __INT32_TYPE__
 # ifdef __INT32_C_SUFFIX__
+#  undef __int32_c_suffix
+#  undef __int16_c_suffix
+#  undef __int8_c_suffix
 #  define __int32_c_suffix __INT32_C_SUFFIX__
 #  define __int16_c_suffix __INT32_C_SUFFIX__
 #  define __int8_c_suffix  __INT32_C_SUFFIX__
@@ -346,6 +362,8 @@ typedef __UINTMAX_TYPE__ uintmax_t;
 
 #ifdef __INT16_TYPE__
 # ifdef __INT16_C_SUFFIX__
+#  undef __int16_c_suffix
+#  undef __int8_c_suffix
 #  define __int16_c_suffix __INT16_C_SUFFIX__
 #  define __int8_c_suffix  __INT16_C_SUFFIX__
 #else
@@ -367,6 +385,7 @@ typedef __UINTMAX_TYPE__ uintmax_t;
 
 #ifdef __INT8_TYPE__
 # ifdef __INT8_C_SUFFIX__
+#  undef __int8_c_suffix
 #  define __int8_c_suffix __INT8_C_SUFFIX__
 #else
 #  undef  __int8_c_suffix
@@ -501,6 +520,15 @@ typedef __UINTMAX_TYPE__ uintmax_t;
 # define INT32_MAX           INT32_C(2147483647)
 # define INT32_MIN         (-INT32_C(2147483647)-1)
 # define UINT32_MAX         UINT32_C(4294967295)
+# undef __INT_LEAST32_MIN
+# undef __INT_LEAST32_MAX
+# undef __UINT_LEAST32_MAX
+# undef __INT_LEAST16_MIN
+# undef __INT_LEAST16_MAX
+# undef __UINT_LEAST16_MAX
+# undef __INT_LEAST8_MIN
+# undef __INT_LEAST8_MAX
+# undef __UINT_LEAST8_MAX
 # define __INT_LEAST32_MIN   INT32_MIN
 # define __INT_LEAST32_MAX   INT32_MAX
 # define __UINT_LEAST32_MAX UINT32_MAX
@@ -545,6 +573,12 @@ typedef __UINTMAX_TYPE__ uintmax_t;
 #define INT16_MAX            INT16_C(32767)
 #define INT16_MIN          (-INT16_C(32767)-1)
 #define UINT16_MAX          UINT16_C(65535)
+# undef __INT_LEAST16_MIN
+# undef __INT_LEAST16_MAX
+# undef __UINT_LEAST16_MAX
+# undef __INT_LEAST8_MIN
+# undef __INT_LEAST8_MAX
+# undef __UINT_LEAST8_MAX
 # define __INT_LEAST16_MIN   INT16_MIN
 # define __INT_LEAST16_MAX   INT16_MAX
 # define __UINT_LEAST16_MAX UINT16_MAX
@@ -567,6 +601,9 @@ typedef __UINTMAX_TYPE__ uintmax_t;
 # define INT8_MAX            INT8_C(127)
 # define INT8_MIN          (-INT8_C(127)-1)
 # define UINT8_MAX          UINT8_C(255)
+# undef __INT_LEAST8_MIN
+# undef __INT_LEAST8_MAX
+# undef __UINT_LEAST8_MAX
 # define __INT_LEAST8_MIN    INT8_MIN
 # define __INT_LEAST8_MAX    INT8_MAX
 # define __UINT_LEAST8_MAX  UINT8_MAX
