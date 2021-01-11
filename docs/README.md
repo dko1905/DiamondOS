@@ -5,13 +5,14 @@
 - [ ] Setup GDT.
 
 ## Compiling and running
-You will need a compiler, a linker and make installed to compile the kernel.
-To compile the kernel, run `make`. To run the kernel you need to create a
-bootable image. The makefile can automatically do it, if you run the disk.hdd
-target, `make disk.hdd`. The disk.hdd target requires parted and
-[echfs-utils](https://github.com/echfs/echfs) installed. The makefile also
-has a run target, that starts QEMU with the image, you need to have a QEMU
-install to have it work.
+You are required to have POSIX compliant make installed to build the kernel.<br/>
+You are requited to have parted and [echfs-utils](https://github.com/echfs/echfs)
+installed to create disk image.<br/>
+And you need QEMU (x86-64) installed to run it.<br/>
+Here are the steps to make it run:
+1. Compile the kernel. `make`
+2. Create bootable image. `make disk.hdd`
+3. Run QEMU with image. `make run`
 
 ## License
 [BSD-2-Clause](./license/LICENSE-bsd-2-clause.txt)
