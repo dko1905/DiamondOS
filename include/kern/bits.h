@@ -25,8 +25,8 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH 
  * DAMAGE.
  */
-#ifndef KERN_INIT_GDT
-#define KERN_INIT_GDT
+#ifndef KERN_BITS_H
+#define KERN_BITS_H
 
 #define KERN_SBIT(b, p, v) \
 	v ? b | (UINT8_C(0x1) << p) : b & ~(UINT8_C(0x1) << p);

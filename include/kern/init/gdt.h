@@ -25,8 +25,8 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH 
  * DAMAGE.
  */
-#ifndef KERN_INIT_GDT
-#define KERN_INIT_GDT
+#ifndef KERN_INIT_GDT_H
+#define KERN_INIT_GDT_H
 #include <kern/types.h>
 
 struct kern_gdt_pointer;
