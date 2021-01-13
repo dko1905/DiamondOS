@@ -2,7 +2,7 @@
 
 include $(CONFIG_MK)
 
-OBJECTS = init.o
+OBJECTS = init.o gdt.o
 
 all: $(OBJECTS)
 

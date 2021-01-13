@@ -25,46 +25,12 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH 
  * DAMAGE.
  */
-#include <kern/types.h>
+#ifndef KERN_INIT_GDT
+#define KERN_INIT_GDT
 
-#include "kern/init/init.h"
+#define KERN_SBIT(b, p, v) \
+	v ? b | (UINT8_C(0x1) << p) : b & ~(UINT8_C(0x1) << p);
+#define KERN_GBIT(b, p) \
+	(b >> p) & UINT8_C(0x1);
 
-#define VGA_ADDRESS 0xb8000
-#define VGA_COLOR(character, color) ((uint16_t) (character) | (uint16_t) (color) << 8)
-#define VGA_BLACK        0
-#define VGA_BLUE         1
-#define VGA_GREEN        2
-#define VGA_CYAN         3
-#define VGA_RED          4
-#define VGA_PURPLE       5
-#define VGA_BROWN        6
-#define VGA_GRAY         7
-#define VGA_DARK_GRAY    8
-#define VGA_LIGHT_BLUE   9
-#define VGA_LIGHT_GREEN  10
-#define VGA_LIGHT_CYAN   11
-#define VGA_LIGHT_RED    12
-#define VGA_LIGHT_PURPLE 13
-#define VGA_YELLOW       14
-#define VGA_WHITE        15
-
-#define VGA_WRITECHAR(character, color) *(p++) = VGA_COLOR(character, color);
-
-void kmain() {
-	volatile uint16_t *p = (uint16_t *)VGA_ADDRESS;
-	const int color = VGA_PURPLE;
-	VGA_WRITECHAR('H', color);
-	VGA_WRITECHAR('e', color);
-	VGA_WRITECHAR('l', color);
-	VGA_WRITECHAR('l', color);
-	VGA_WRITECHAR('o', color);
-	VGA_WRITECHAR(' ', color);
-	VGA_WRITECHAR('w', color);
-	VGA_WRITECHAR('o', color);
-	VGA_WRITECHAR('r', color);
-	VGA_WRITECHAR('l', color);
-	VGA_WRITECHAR('d', color);
-	VGA_WRITECHAR('!', color);
-	
-	asm volatile("hlt");
-}
+#endif

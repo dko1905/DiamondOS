@@ -4,9 +4,10 @@
  * From https://github.com/limine-bootloader/limine-barebones/
  */
 #include <stivale2.h>
-#include <kern/types.h>
 
+#include <kern/types.h>
 #include <kern/init/init.h>
+#include <kern/init/gdt.h>
 
 static uint8_t stack[4096] = {0};
 void _start(struct stivale2_struct *info);
@@ -28,5 +29,6 @@ struct stivale2_header header2 = {
 };
 
 void _start(struct stivale2_struct *info) {
+	kern_init_gdt_init();
     kmain();
 }
