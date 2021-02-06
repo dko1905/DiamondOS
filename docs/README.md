@@ -2,10 +2,11 @@
 
 ## Progress
 - [x] Boot the kernel.
-- [ ] Setup GDT.
+- [X] Setup GDT.
+- [ ] Much much more.
 
 ## Compiling and running
-You are required to have POSIX compliant make installed to build the kernel.<br/>
+You are required to have a POSIX compliant make installed to build the kernel.<br/>
 You are requited to have parted and [echfs-utils](https://github.com/echfs/echfs)
 installed to create disk image.<br/>
 And you need QEMU (x86-64) installed to run it.<br/>
