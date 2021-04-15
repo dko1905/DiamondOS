@@ -1,7 +1,7 @@
 # ![Diamond OS](./logo/wide_logo.png)
 
 ## Progress
-- [x] Boot the kernel.
+- [x] Boot the kernel (using limine).
 - [X] Setup GDT.
 - [ ] Much much more.
 
